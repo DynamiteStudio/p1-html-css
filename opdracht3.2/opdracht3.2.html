@@ -22,13 +22,8 @@ li a {
 </style>
 </head>
 <body>
+  <h1>Turkish Airlines</h1>
 
-<ul>
-  <li><a href="Canvas.html">Canvas</a></li>
-  <li><a href="Eduarte.html">Eduarte</a></li>
-  <li><a href="software.html">Software</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
 
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
@@ -36,30 +31,60 @@ li a {
   <label for="lname">Last name:</label required><br>
   <input type="text" id="lname" name="lname" value="" placeholder="achternaam" ><br>
   Datum: <br><input type="date" name="datum" id="" required><br>
-  Mail: <br><input type="email" name="mail" id="" required><br><br>
-  <input type="submit" value="Submit">
+  Mail: <br><input type="email" name="mail" id="" required><br>
+  Stad: <br><input type="email" name="mail" id="" required><br>
+  Straat met huisnummer: <br><input type="email" name="mail" id="" required><br>
+  land: <br><input type="email" name="mail" id="" required><br>
+  Datum vertrek: <br><input type="email" name="mail" id="" required><br>
+  Datum terugkomst: <br><input type="email" name="mail" id="" required><br>
+  BSN Nummer: <br><input type="email" name="mail" id="" required><br>
+  <form action="/action_page.php">
+    <label for="cars">Vakantieland:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Turkije</option>
+      <option value="saab">Arabie</option>
+      <option value="opel">Rusland</option>
+      <option value="audi">Brazilie</option>
+    </select>
+<br>
+    <label for="cars">Aantal reizgenoten:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">1</option>
+      <option value="saab">2</option>
+      <option value="opel">3</option>
+      <option value="audi">4</option>
+    </select>
+
 </form> 
 
 <br>
 
-<table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
+<p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+</form>
 
+<form method="post" action="/action_page_post.php">
+  <fieldset data-role="controlgroup">
+  <legend>Choose your gender:</legend>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male" checked>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female">
+  </fieldset>
+<form method="post" action="/action_page_post.php"> <br>
+  <form action="/action_page.php">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+  </form>
+  <input type="submit" value="Boek nu">
 </body>
 </html>
 
