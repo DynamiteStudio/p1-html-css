@@ -1,0 +1,114 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+#HamburgerMenu
+{
+    display: none;
+}
+* Dekstop 
+nav
+{
+    width: 90vw;
+    height: 10vh;
+    padding: 2vh 5vw 2vh 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EA4D4B;
+}
+h1
+{
+    color: white;
+}
+section
+{
+    height: 100%;
+    padding: 2vh 5vw 2vh 5vw;
+}
+#MainContainer
+{
+    width: 100vw;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#Section1
+{
+    background-color: #F9CA22;
+}
+#Section2
+{
+    background-color: #F0922B;
+}
+#Section3
+{
+    background-color: #69B04C;
+}
+
+ Phone 
+@media only screen and (max-width: 786px) {
+    #HamburgerMenu
+    {
+        display: inline;
+        height: 3vh;
+        width: 3vh;
+        background-color: white;
+    }
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav
+    {
+        justify-content: space-between;
+        background-color: #686DE0;
+    }
+    #Section1
+    {
+        background-color: #7ED6DF;
+    }
+    #Section2
+    {
+        background-color: #E056FD;
+    }
+    #Section3
+    {
+        background-color: #30336A;
+    }
+} 
+
+ Tablet *
+@media only screen and (min-width: 576px) and (max-width: 786px) {
+    #HamburgerMenu
+    {
+        display: none;
+    }
+    nav
+    {
+        justify-content: center;
+        background-color: #FF6B81;
+    }
+    section
+    {
+        display: inline;
+    }
+    #Section1
+    {
+        background-color: #FE4657;
+    }
+    #Section2
+    {
+        background-color: #5352EC;
+    }
+    #Section3
+    {
+        background-color: #3742F9;
+    }
+}
