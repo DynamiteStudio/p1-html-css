@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .green-text {
+      color: green;
+    }
+
+    .red-text {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <script src="opd7.1.js"></script>
+  <script>
+    var budget = 100;
+    var product = 60;
+    var output = document.getElementById("output");
+
+    if (budget >= product) {
+      output.innerHTML = "U heeft genoeg geld!";
+      output.classList.add("green-text");
+    } else {
+      output.innerHTML = "Helaas, te weinig geld";
+      output.classList.add("red-text");
+    }
+  </script>
+
+  <div id="output"></div>
+</body>
+</html>
